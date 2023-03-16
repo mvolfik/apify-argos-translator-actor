@@ -33,7 +33,7 @@ async def main():
             translated = argostranslate.translate.translate(
                 item, source_language, target_language
             )
-            await Actor.push_data([item, translated])
+            await Actor.push_data({"source": item, "translated": translated})
             state["processed_count"] += 1
 
         reporter.cancel()

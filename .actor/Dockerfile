@@ -4,6 +4,8 @@ RUN apt-get update \
  && apt-get install -y cmake \
  && rm -rf /var/lib/apt/lists
 
+RUN pip install --index-url https://download.pytorch.org/whl/cpu torch
+
 COPY requirements.txt ./
 
 RUN echo "Python version:" \
