@@ -149,6 +149,7 @@
       "title": "Texts to translate",
       "type": "array",
       "description": "The texts you want to translate.",
+      "editor": "stringList",
       "prefill": [
         "Glory to Ukraine!",
         "This is an example text. It can be very long. There are basically no limits.",
