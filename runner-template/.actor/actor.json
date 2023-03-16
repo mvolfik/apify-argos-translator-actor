@@ -1,0 +1,19 @@
+{
+  "actorSpecification": 1,
+  "name": "argos-translator-${LANG_CODE}-en",
+  "title": "Free ${LANG_NAME}-English (bidirectional) translator",
+  "description": "Translate any text between ${LANG_NAME} and English for free, without any API keys. You only need to pay for Apify compute consumption.",
+  "version": "0.0",
+  "meta": {
+    "templateId": "python-start"
+  },
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Translated texts",
+      "views": {}
+    }
+  }
+}

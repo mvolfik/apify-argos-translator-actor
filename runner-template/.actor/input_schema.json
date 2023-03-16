@@ -1,0 +1,30 @@
+{
+  "title": "Translate from ${LANG_NAME} to English and vice versa",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "fromEnglish": {
+      "title": "From English to ${LANG_NAME}",
+      "type": "boolean",
+      "description": "Translate from English to ${LANG_NAME}. If not selected, translation from ${LANG_NAME} to English will be performed.",
+      "editor": "checkbox",
+      "default": false
+    },
+    "texts": {
+      "title": "Texts to translate",
+      "type": "array",
+      "description": "The texts you want to translate.",
+      "editor": "stringList",
+      "prefill": ${PREFILLS}
+    },
+    "hypothesesCount": {
+      "title": "Number of hypotheses",
+      "type": "integer",
+      "description": "The number of translation hypotheses to generate for each text. This actor is using a machine learning model, which is able to generate multiple probable transations. If you for example need to match data across languages, testing more translation hypotheses could improve your success rate. However, generating more translations will also increase the time (and therefore cost) needed to process the data.",
+      "editor": "number",
+      "prefill": 1,
+      "default": 1
+    }
+  },
+  "required": ["texts"]
+}

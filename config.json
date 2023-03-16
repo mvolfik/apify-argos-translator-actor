@@ -1,0 +1,29 @@
+{
+  "cs": {
+    "name": "Czech",
+    "localizedActorTitle": "Česko-anglický překladač zdarma",
+    "prefills": [
+      "Překlad z češtiny do angličtiny",
+      "Texty mohou být velmi dlouhé. Může to být několik vět nebo i klidně odstavců.\n\nTohle je druhý odstavec.",
+      "krátká fráze"
+    ]
+  },
+  "sv": {
+    "name": "Swedish",
+    "localizedActorTitle": "Gratis svensk-engelsk översättare",
+    "prefills": [
+      "Översätter från svenska till engelska",
+      "Texter kan vara väldigt långa. Det kan vara flera meningar eller till och med stycken.\n\nDetta är andra stycket.",
+      "kort mening"
+    ]
+  },
+  "uk": {
+    "name": "Ukrainian",
+    "localizedActorTitle": "Безкоштовний український перекладач",
+    "prefills": [
+      "Переклад з української на англійську",
+      "Тексти можуть бути дуже довгими. Це може бути кілька речень або навіть абзаців.\n\nЦе другий абзац.",
+      "коротка фраза"
+    ]
+  }
+}
