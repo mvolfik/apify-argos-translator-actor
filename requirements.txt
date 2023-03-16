@@ -1,0 +1,2 @@
+apify ~= 1.0
+argostranslate ~= 1.8
