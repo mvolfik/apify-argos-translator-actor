@@ -12,6 +12,8 @@ cd ..
 
 no_wait_for_build=""
 
+echo "Building all actors for version '$TARGET_VERSION' with base image digest '$BASE_IMAGE_DIGEST'"
+
 for lang_code in $(jq -r 'keys | join("\n")' config.json); do
     lang_name=$(jq -r ".$lang_code.name" config.json)
     localized_actor_title=$(jq -r ".$lang_code.localizedActorTitle" config.json)
@@ -25,12 +27,18 @@ for lang_code in $(jq -r 'keys | join("\n")' config.json); do
 
     sed -i "1s/^/$NOTICE/" src/*.py
 
+    sed -i 's/${BASE_IMAGE_DIGEST}/'"$BASE_IMAGE_DIGEST/g" .actor/Dockerfile
     sed -i 's/${LANG_CODE}/'"$lang_code/g" $FILES
     sed -i 's/${LANG_NAME}/'"$lang_name/g" $FILES
     sed -i 's/${LOCALIZED_ACTOR_TITLE}/'"$localized_actor_title/g" $FILES
     sed -i 's/${PREFILLS}/'"$prefills/g" $FILES
 
-    apify push $no_wait_for_build
+    apify push -b $TARGET_VERSION $no_wait_for_build | tee ../$lang_code.log
+    if grep -Fe "Error: Build failed!" ../$lang_code.log; then
+        echo "Build failed, aborting"
+        exit 1
+    fi
+
     # we waited for first build to see that nothing is broken, the rest can run in parallel
     no_wait_for_build="-w1"
     cd ../..

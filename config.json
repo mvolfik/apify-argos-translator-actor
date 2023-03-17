@@ -4,26 +4,98 @@
     "localizedActorTitle": "Česko-anglický překladač zdarma",
     "prefills": [
       "Překlad z češtiny do angličtiny",
-      "Texty mohou být velmi dlouhé. Může to být několik vět nebo i klidně odstavců.\n\nTohle je druhý odstavec.",
+      "Texty mohou být velmi dlouhé. Může to být několik vět nebo i klidně odstavců.\n\nToto je druhý odstavec.",
       "krátká fráze"
+    ]
+  },
+  "da": {
+    "name": "Danish",
+    "localizedActorTitle": "Gratis dansk-engelsk oversætter",
+    "prefills": [
+      "Oversættelse fra dansk til engelsk",
+      "Tekster kan være meget lange. Det kan være flere sætninger eller endda afsnit.\n\nDette er et andet afsnit.",
+      "kort sætning"
+    ]
+  },
+  "nl": {
+    "name": "Dutch",
+    "localizedActorTitle": "Gratis vertaler Nederlands-Engels",
+    "prefills": [
+      "Vertaling van Nederlands naar Engels",
+      "Teksten kunnen erg lang zijn. Het kunnen meerdere zinnen of zelfs alinea's zijn.\n\nDit is een tweede alinea.",
+      "korte zin"
+    ]
+  },
+  "fi": {
+    "name": "Finnish",
+    "localizedActorTitle": "Ilmainen Suomi-Englanti kääntäjä",
+    "prefills": [
+      "Käännös suomesta englanniksi",
+      "Tekstit voivat olla hyvin pitkiä. Se voi olla useita lauseita tai jopa kappaleita.\n\nTämä on toinen kappale.",
+      "lyhyt lause"
+    ]
+  },
+  "fr": {
+    "name": "French",
+    "localizedActorTitle": "Traducteur gratuit français-anglais",
+    "prefills": [
+      "Traduction du français vers l'anglais",
+      "Les textes peuvent être très longs. Il peut s'agir de plusieurs phrases ou même de paragraphes.\n\nCeci est un deuxième paragraphe.",
+      "phrase courte"
+    ]
+  },
+  "de": {
+    "name": "German",
+    "localizedActorTitle": "Kostenloser Deutsch-Englisch-Übersetzer",
+    "prefills": [
+      "Übersetzung von Deutsch ins Englisch",
+      "Texte können sehr lang sein. Sie können mehrere Sätze oder sogar Absätze sein.\n\nDies ist ein zweiter Absatz.",
+      "kurze Phrase"
+    ]
+  },
+  "el": {
+    "name": "Greek",
+    "localizedActorTitle": "Δωρεάν μεταφραστής ελληνικών-αγγλικών",
+    "prefills": [
+      "Μετάφραση από τα ελληνικά στα αγγλικά",
+      "Τα κείμενα μπορεί να είναι πολύ μεγάλα. Μπορεί να είναι πολλές προτάσεις ή ακόμη και παράγραφοι.\n\nΑυτή είναι μια δεύτερη παράγραφος.",
+      "σύντομη φράση"
+    ]
+  },
+  "hu": {
+    "name": "Hungarian",
+    "localizedActorTitle": "Ingyenes Magyar-Angol fordító",
+    "prefills": [
+      "Fordítás magyarról angolra",
+      "A szövegek nagyon hosszúak lehetnek. Lehet több mondat vagy akár bekezdés is.\n\nEz egy második bekezdés.",
+      "rövid mondat"
     ]
   },
   "sv": {
     "name": "Swedish",
-    "localizedActorTitle": "Gratis svensk-engelsk översättare",
+    "localizedActorTitle": "Gratis svenska-engelska översättare",
     "prefills": [
-      "Översätter från svenska till engelska",
-      "Texter kan vara väldigt långa. Det kan vara flera meningar eller till och med stycken.\n\nDetta är andra stycket.",
-      "kort mening"
+      "Översättning från svenska till engelska",
+      "Texter kan vara mycket långa. Det kan vara flera meningar eller till och med stycken.\n\nDet här är ett andra stycke.",
+      "kort fras"
     ]
   },
   "uk": {
     "name": "Ukrainian",
-    "localizedActorTitle": "Безкоштовний український перекладач",
+    "localizedActorTitle": "Безкоштовний українсько-англійський перекладач",
     "prefills": [
       "Переклад з української на англійську",
       "Тексти можуть бути дуже довгими. Це може бути кілька речень або навіть абзаців.\n\nЦе другий абзац.",
       "коротка фраза"
+    ]
+  },
+  "zh": {
+    "name": "Chinese",
+    "localizedActorTitle": "免费汉英翻译",
+    "prefills": [
+      "从中文到英文的翻译",
+      "文本可能非常长。它可以是多个句子，甚至是段落。\n\n这是第二段。",
+      "短短的一句话"
     ]
   }
 }
