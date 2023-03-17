@@ -50,7 +50,7 @@ jobs:
         with:
           context: base-build
           push: true
-          tags: mvolfik/argos-translator-base:${{ env.TARGET_VERSION }}
+          tags: ghcr.io/mvolfik/argos-translator-base:${{ env.TARGET_VERSION }}
           cache-from: type=gha
           cache-to: type=gha
 
