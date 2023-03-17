@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: Detect target version
         run: |
-          event_name = ${{ github.event_name }}
+          event_name=${{ github.event_name }}
           echo "Event name: $event_name"
-          target_version = $([ $event_name = workflow_dispatch ] && echo -n latest || echo -n beta)
+          target_version=$([ $event_name = workflow_dispatch ] && echo -n latest || echo -n beta)
           echo "Target version: $target_version"
           echo "TARGET_VERSION=$target_version" >> $GITHUB_ENV
 
