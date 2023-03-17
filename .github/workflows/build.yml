@@ -40,7 +40,9 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Create empty directory for build context
-        run: mkdir -p base-build
+        run: |
+          mkdir -p base-build
+          cp Dockerfile.base base-build/Dockerfile
 
       - name: Build and push
         id: docker-build
