@@ -42,7 +42,7 @@ jobs:
       - name: Create empty directory for build context
         run: |
           mkdir -p base-build
-          cp Dockerfile.base base-build/Dockerfile
+          cp base.Dockerfile base-build/Dockerfile
 
       - name: Build and push
         id: docker-build
